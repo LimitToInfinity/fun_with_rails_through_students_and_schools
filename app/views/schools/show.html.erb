@@ -1,0 +1,8 @@
+<h1>Hey this is the School!</h1>
+
+<h3> Name: </h3>
+<%= link_to @school.name, edit_school_path(@school) %>
+<h4> Number of Teachers: </h4>
+<%= @school.number_of_teachers %>
+<br><br>
+<%= button_to "Delete", @school,  method: :delete %>
